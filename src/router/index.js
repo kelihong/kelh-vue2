@@ -39,14 +39,16 @@ const router = new Router({
   routes: routes,
 })
 
-console.log(router)
 
 // 根据 meta 修改页面标题
 router.beforeEach((to, from, next) => {
   
-  if(to.meta.title) {
+  if (to.meta && to.meta.title) {
     document.title = to.meta.title
   }
+
+  // 不写会无法 resolve 对应的路由界面
+  next()
 })
 
 export default router
