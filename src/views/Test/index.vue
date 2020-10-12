@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-      home
+  <div class="test">
+      test
   </div>
 </template>
 
@@ -21,10 +21,3 @@ export default {
     },
 }
 </script>
-
-<style lang="scss">
-  .home {
-    background: pink;
-    height: 220px;
-  }
-</style>

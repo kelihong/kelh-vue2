@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <router-view/>
+    <transition name="slide">
+      <router-view />
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>

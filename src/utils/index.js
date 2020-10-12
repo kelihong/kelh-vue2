@@ -1,4 +1,10 @@
-// 判断开发环境
 
-const IsDev = (process.env.NODE_ENV === 'development')
-const IsTest = (process.env.NODE_ENV === 'production-test')
+// 常量、 公共方法
+
+// 判断开发环境
+const IS_DEV = (process.env.NODE_ENV === 'development');
+
+
+module.exports = {
+    IS_DEV, // 是否开发环境
+}

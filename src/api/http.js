@@ -45,9 +45,8 @@ axios.interceptors.response.use(
             return resData.data
         }
 
-        console.log(' == 接口 =>', config.url, '请求失败，== 请求结果 ==>')
-
         // 返回结果
+        console.log(' == 接口 =>', config.url, '请求失败，== 请求结果 ==>')
         return resData
 
     },
